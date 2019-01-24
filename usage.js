@@ -5,7 +5,7 @@ describe("Custom matcher: 'toBeOrNotToBe'", function() {
     jasmine.addMatchers(toBeOrNotToBe)
   })
 
-  it("is allways the case, since it is a tautology", function() {
+  it("is always the case, since it is a tautology", function() {
     expect(true).toBeOrNotToBe(true)
     expect(true).toBeOrNotToBe(false)
     expect(false).toBeOrNotToBe(true)
